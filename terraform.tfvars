@@ -1,5 +1,5 @@
 region                     = "ap-south-1"
-subnet_ids                 = ["subnet-0a88cfb8b1893289f", "subnet-0fa292f59dc93c62a"]
+subnet_ids                 = ["subnet-0e3be67daad18b118", "subnet-027fb71c483cab7b2"]
 allocated_storage          = 20
 db_engine                  = "postgres"
 db_engine_version          = "18.1"
@@ -7,7 +7,8 @@ db_instance_class          = "db.t3.micro"
 db_name                    = "mydatabase"
 db_username                = "anand"
 db_password                = "root123456"
+vpc_id_for_rds_instance    = "vpc-0ab80cbfa1c165458"
 db_engine_pggroup          = "18"
-db_backup_retention_period = 7
+db_backup_retention_period = 0
 db_backup_window           = "03:00-04:00"
 db_maintenance_window      = "sun:04:00-sun:05:00"

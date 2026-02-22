@@ -3,6 +3,7 @@
 resource "aws_security_group" "rds_sg" {
   name        = "rds_security_group"
   description = "Security group for RDS instance"
+  vpc_id      = var.vpc_id_for_rds_instance
   
   ingress {
     from_port   = 5432
@@ -34,7 +35,7 @@ resource "aws_db_subnet_group" "rds_subnet_group" {
 }
 
 # RDS instance
-resource "aws_db_instance" "default" {
+resource "aws_db_instance" "rds_instance" {
   allocated_storage      = var.allocated_storage
   engine                 = var.db_engine
   engine_version         = var.db_engine_version

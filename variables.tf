@@ -13,6 +13,11 @@ variable "allocated_storage" {
   type        = number
 }
 
+variable "vpc_id_for_rds_instance" {
+  description = "ID of the VPC where the RDS instance will get deployed"
+  type        = string
+}
+
 variable "db_engine" {
   description = "Database engine (e.g., postgres, mysql)"
   type        = string
