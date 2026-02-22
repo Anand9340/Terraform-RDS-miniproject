@@ -1,0 +1,13 @@
+region                     = "ap-south-1"
+subnet_ids                 = ["subnet-0a88cfb8b1893289f", "subnet-0fa292f59dc93c62a"]
+allocated_storage          = 20
+db_engine                  = "postgres"
+db_engine_version          = "18.1"
+db_instance_class          = "db.t3.micro"
+db_name                    = "mydatabase"
+db_username                = "anand"
+db_password                = "root123456"
+db_engine_pggroup          = "18"
+db_backup_retention_period = 7
+db_backup_window           = "03:00-04:00"
+db_maintenance_window      = "sun:04:00-sun:05:00"
